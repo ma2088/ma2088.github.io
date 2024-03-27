@@ -110,35 +110,6 @@ main {
 #play_preference h2 {
   color: rgb(255, 250, 250);
 }
-#contact_form h2 {
-  color: white;
-}
-#contact_form label {
-  color: white;
-}
-
-nav ul li a {
-  color: white;
-}
-
-nav ul li a:visited {
-  color: white;
-}
-
-#signup_form h2 {
-  color: white;
-}
-
-#signup_form label {
-  color: white;
-}
-#login_form h2 {
-  color: white;
-}
-
-#login_form label {
-  color: white;
-}
 
 /* Media Queries */
 @media only screen and (min-width: 768px) {
@@ -179,7 +150,115 @@ nav ul li a:visited {
   color: #fff; 
 }
 
+/* contact_form */
+#contact_form, #signup_form, #login_form  {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
 
+#contact_form h2 {
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contact_form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact_form input[type="text"],
+#contact_form input[type="email"],
+#contact_form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#contact_form textarea {
+    resize: none;
+}
+
+#contact_form input[type="submit"] {
+    background-color: #343a40;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact_form input[type="submit"]:hover {
+    background-color: #23272b;
+}
+
+
+/* headings */
+#signup_form h2,
+#login_form h2 {
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*  labels */
+#signup_form label,
+#login_form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/*form inputs */
+#signup_form input[type="text"],
+#signup_form input[type="email"],
+#signup_form input[type="password"],
+#login_form input[type="text"],
+#login_form input[type="email"],
+#login_form input[type="password"],
+#signup_form textarea,
+#login_form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* form textareas */
+#signup_form textarea,
+#login_form textarea {
+    resize: none;
+}
+
+/* submit buttons */
+#signup_form input[type="submit"],
+#login_form input[type="submit"] {
+    background-color: #343a40;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* submit button hover effect */
+#signup_form input[type="submit"]:hover,
+#login_form input[type="submit"]:hover {
+    background-color: #23272b;
+}
 
 footer {
     background-color: #dd7d1e86;
