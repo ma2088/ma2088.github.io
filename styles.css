@@ -44,7 +44,6 @@ nav ul li a {
   text-decoration: none;
 }
 
-
 main {
   flex-grow: 1;
   display: flex;
@@ -54,7 +53,6 @@ main {
   width: 1080px;
   margin: 0 auto;
 }
-
 
 /* Styling for content boxes */
 #what_we_do {
@@ -72,7 +70,7 @@ main {
 
 #boxes {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   margin-bottom: 20px;
 }
 
@@ -83,13 +81,12 @@ main {
   width: 200px;
   margin: 0 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  border-radius: 50px; 
-  display: inline-block; 
+  border-radius: 50px;
+  display: inline-block;
 }
 .container {
-    white-space: nowrap;
-  }
-  
+  white-space: nowrap;
+}
 
 .box h3 {
   color: #000000;
@@ -114,108 +111,109 @@ main {
 /* Media Queries */
 @media only screen and (min-width: 768px) {
   .box {
-    width: 45%; 
+    width: 45%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   /* Large display styles */
   .box {
-    width: 30%; 
+    width: 30%;
   }
 }
 /* Button styling */
 .button-container {
   display: flex;
   justify-content: center;
-  margin-top: 250px; 
+  margin-top: 250px;
 }
 
 /* Ghost Button Style */
 .ghost-button {
   background-color: transparent;
-  border: 2px solid #ffffff; 
-  color: #fffafa; 
-  padding: 20px 30px; 
+  border: 2px solid #ffffff;
+  color: #fffafa;
+  padding: 20px 30px;
   text-decoration: none;
-  font-size: 16px; 
-  margin: 20px; 
-  cursor: pointer; 
-  transition: background-color 0.3s, color 0.3s; 
-  border-radius: 20px; 
+  font-size: 16px;
+  margin: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 20px;
 }
 
 .ghost-button:hover {
-  background-color: #dd7d1e86; 
-  color: #fff; 
+  background-color: #dd7d1e86;
+  color: #fff;
 }
 
 /* contact_form */
-#contact_form, #signup_form, #login_form  {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    max-width: 600px;
-    width: 100%;
-    margin: 0 auto;
+#contact_form,
+#signup_form,
+#login_form {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 #contact_form h2 {
-    color: #343a40;
-    text-align: center;
-    margin-bottom: 30px;
+  color: #343a40;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 #contact_form label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 #contact_form input[type="text"],
 #contact_form input[type="email"],
 #contact_form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 #contact_form textarea {
-    resize: none;
+  resize: none;
 }
 
 #contact_form input[type="submit"] {
-    background-color: #343a40;
-    color: #ffffff;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+  background-color: #343a40;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 #contact_form input[type="submit"]:hover {
-    background-color: #23272b;
+  background-color: #23272b;
 }
-
 
 /* headings */
 #signup_form h2,
 #login_form h2 {
-    color: #343a40;
-    text-align: center;
-    margin-bottom: 30px;
+  color: #343a40;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 /*  labels */
 #signup_form label,
 #login_form label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 /*form inputs */
@@ -227,44 +225,43 @@ main {
 #login_form input[type="password"],
 #signup_form textarea,
 #login_form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 /* form textareas */
 #signup_form textarea,
 #login_form textarea {
-    resize: none;
+  resize: none;
 }
 
 /* submit buttons */
 #signup_form input[type="submit"],
 #login_form input[type="submit"] {
-    background-color: #343a40;
-    color: #ffffff;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+  background-color: #343a40;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 /* submit button hover effect */
 #signup_form input[type="submit"]:hover,
 #login_form input[type="submit"]:hover {
-    background-color: #23272b;
+  background-color: #23272b;
 }
 
 footer {
-    background-color: #dd7d1e86;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-  }
-
+  background-color: #dd7d1e86;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
