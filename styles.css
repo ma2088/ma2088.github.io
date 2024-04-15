@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
- background-color: #033046;
+ background-color: #ffffff;
   background-size: cover;
   background-position: center;
 }
@@ -56,13 +56,13 @@ main {
 
 /* Styling for content boxes */
 #what_we_do {
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   padding: 0px 0;
 }
 
 #what_we_offer {
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   margin-top: 100px;
   position: relative;
@@ -131,8 +131,8 @@ main {
 /* Ghost Button Style */
 .ghost-button {
   background-color: transparent;
-  border: 2px solid #ffffff;
-  color: #fffafa;
+  border: 2px solid #000000;
+  color: #000000;
   padding: 20px 30px;
   text-decoration: none;
   font-size: 16px;
@@ -146,6 +146,83 @@ main {
   background-color: #0c8e3798;
   color: #fff;
 }
+
+/* Table layout*/
+
+table {
+  max-width: 100%;
+}
+
+tr:nth-child(odd) {
+  background-color: #e9e9e9;
+}
+
+th {
+  background-color: #0c8e3798;
+  color: #fff;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.5em 1em;
+}
+
+td::before {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+ table {
+   border: 0;
+   display: block;
+   box-shadow: none;
+ }
+
+ thead {
+   position: absolute;
+   opacity: 0;
+ }
+  
+ tbody {
+   display: block;
+   width: 100%;
+   min-width: 19em;
+   max-width: 25em;
+ }
+
+ tr {
+   border-top: 2px solid #0c8e3798;
+   border-bottom: 1px solid #0c8e3798;
+   display: grid;
+   grid-template-columns: max-content auto;
+   margin-bottom: 1em;
+ }
+
+ td {
+   display: contents;
+ }
+
+ td::before {
+   display: inline-block;
+   font-weight: bold;
+   padding: 0.5em;
+   border-bottom: 1px solid;
+ }
+  
+  td span {
+    padding: 0.5em;
+    border-bottom: 1px solid;
+  }
+
+ td:last-child {
+   border-bottom: 0;
+ }
+}
+
+View Compiled
+
+
 
 /* contact_form */
 #contact_form,
