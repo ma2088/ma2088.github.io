@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
- background-color: #ffffff;
+  background-color: #ffffff;
   background-size: cover;
   background-position: center;
 }
@@ -108,19 +108,105 @@ main {
   color: rgb(255, 250, 250);
 }
 
-/* Media Queries */
-@media only screen and (min-width: 768px) {
+/* Adjustments for Small Layout (Max-width: 680px) */
+@media screen and (max-width: 680px) {
+  /* Tables */
+  table {
+    border: 0;
+    display: block;
+    box-shadow: none;
+  }
+
+  thead {
+    position: absolute;
+    opacity: 0;
+  }
+
+  tbody {
+    display: block;
+    width: 100%;
+    min-width: 19em;
+    max-width: 25em;
+  }
+
+  tr {
+    border-top: 2px solid #0c8e3798;
+    border-bottom: 1px solid #0c8e3798;
+    display: grid;
+    grid-template-columns: max-content auto;
+    margin-bottom: 1em;
+  }
+
+  td {
+    display: contents;
+  }
+
+  td::before {
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.5em;
+    border-bottom: 1px solid;
+  }
+
+  td span {
+    padding: 0.5em;
+    border-bottom: 1px solid;
+  }
+
+  td:last-child {
+    border-bottom: 0;
+  }
+
+  /* Forms */
+  #contact_form,
+  #signup_form,
+  #login_form {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  /* Form Inputs */
+  #contact_form input[type="text"],
+  #contact_form input[type="email"],
+  #contact_form textarea,
+  #signup_form input[type="text"],
+  #signup_form input[type="email"],
+  #signup_form input[type="password"],
+  #signup_form textarea,
+  #login_form input[type="text"],
+  #login_form input[type="email"],
+  #login_form input[type="password"],
+  #login_form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #257bd1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  /* Buttons */
+  .ghost-button {
+    margin: 20px 0;
+    width: 100%;
+  }
+}
+
+/* Adjustments for Medium Layout (Min-width: 768px) */
+@media screen and (min-width: 768px) {
   .box {
     width: 45%;
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  /* Large display styles */
+/* Adjustments for Large Layout (Min-width: 1024px) */
+@media screen and (min-width: 1024px) {
   .box {
     width: 30%;
   }
 }
+
 /* Button styling */
 .button-container {
   display: flex;
@@ -173,56 +259,52 @@ td::before {
 }
 
 @media screen and (max-width: 680px) {
- table {
-   border: 0;
-   display: block;
-   box-shadow: none;
- }
+  table {
+    border: 0;
+    display: block;
+    box-shadow: none;
+  }
 
- thead {
-   position: absolute;
-   opacity: 0;
- }
-  
- tbody {
-   display: block;
-   width: 100%;
-   min-width: 19em;
-   max-width: 25em;
- }
+  thead {
+    position: absolute;
+    opacity: 0;
+  }
 
- tr {
-   border-top: 2px solid #0c8e3798;
-   border-bottom: 1px solid #0c8e3798;
-   display: grid;
-   grid-template-columns: max-content auto;
-   margin-bottom: 1em;
- }
+  tbody {
+    display: block;
+    width: 100%;
+    min-width: 19em;
+    max-width: 25em;
+  }
 
- td {
-   display: contents;
- }
+  tr {
+    border-top: 2px solid #0c8e3798;
+    border-bottom: 1px solid #0c8e3798;
+    display: grid;
+    grid-template-columns: max-content auto;
+    margin-bottom: 1em;
+  }
 
- td::before {
-   display: inline-block;
-   font-weight: bold;
-   padding: 0.5em;
-   border-bottom: 1px solid;
- }
-  
+  td {
+    display: contents;
+  }
+
+  td::before {
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.5em;
+    border-bottom: 1px solid;
+  }
+
   td span {
     padding: 0.5em;
     border-bottom: 1px solid;
   }
 
- td:last-child {
-   border-bottom: 0;
- }
+  td:last-child {
+    border-bottom: 0;
+  }
 }
-
-View Compiled
-
-
 
 /* contact_form */
 #contact_form,
@@ -254,7 +336,7 @@ View Compiled
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #ced4da;
+  border: 1px solid #257bd1;
   border-radius: 5px;
   box-sizing: border-box;
   font-size: 16px;
@@ -305,7 +387,7 @@ View Compiled
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #ced4da;
+  border: 1px solid #257bd1;
   border-radius: 5px;
   box-sizing: border-box;
   font-size: 16px;
